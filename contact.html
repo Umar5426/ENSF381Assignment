@@ -1,0 +1,119 @@
+<!--
+=========================================================
+Name        : contact.html
+Assignment  : Assignment 1
+Author(s)   : Rayyan Ahmed, Muhammed Umar Khan
+Submission  : Feb 5, 2024
+Description : The code for the contact page
+=========================================================
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCare Contacts</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: whitesmoke;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+        }
+
+        .contact-section, .inquiry-section {
+            margin-bottom: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 750px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            background-color: whitesmoke;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="logo.png" alt="EduCare Logo" style="width: 300px; height: auto;">
+</header>
+    <div class="container">
+        <div class="contact-section">
+            <h2 style="color: #007bff; margin-bottom: 10px;">Customer Support</h2>
+            <p>Please feel free to contact us:</p>
+            <ul>
+                <li>Phone: (587) 432-2459</li>
+                <li>Email: muhammed.khan@ucalgary.ca</li>
+            </ul>
+        </div>
+        <div class="inquiry-section">
+            <h2 style="color: #007bff; margin-bottom: 10px;">Share Your Inquiries</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="feedback">Feedback:</label><br>
+                <textarea id="feedback" name="feedback" rows="6" cols="50" required></textarea><br><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+    </div>
+    <footer style="background-color: whitesmoke; color: #007bff; text-align: center; padding: 20px; border: 1px solid #007bff; border-radius: 5px;">
+        <form action="index.html">
+            <input type="submit" value="Back Home" style="background-color: #007bff; border: none; color: white; padding: 10px 20px; text-transform: uppercase; font-weight: bold; cursor: pointer; border-radius: 5px;">
+        </form>
+        <p>© 2024 Rayyan Ahmed and Muhammed Umar Khan</p>
+    </footer>
+</body>
+</html>

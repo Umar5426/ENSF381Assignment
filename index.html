@@ -1,0 +1,105 @@
+<!--
+=========================================================
+Name        : index.html
+Assignment  : Assignment 1
+Author(s)   : Rayyan Ahmed, Muhammed Umar Khan
+Submission  : Feb 5, 2024
+Description : The code for the "Main" (Index) Page
+=========================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="EduCare Tab heading">
+    <meta name="keywords" content="HTML, Web Development, Example, img">
+    <meta name="author" content="Rayyan Ahmed, Muhammed Umar Khan">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>EduCare</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header, main, footer {
+            width: 100%;
+            max-width: auto;
+            margin: 00px 0;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            padding: 0%;
+        }
+
+        th, td {
+            border:0px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <table style="width: 100%;">
+            <tr>
+                <th colspan="3" style="background-color: #007bff; color: #fff; padding: 10px;">EduCare</th>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: center;"><img src="logo.png" alt="EduCare Logo" style="width: 300px; height: auto;"></td>
+            </tr>
+            <tr>
+                <td style="background-color: #007bff;"><a href="login.html" style="color: white;">Login Now</a></td>
+                <td style="background-color: #007bff;"><a href="products.html" style="color:white;">Our Products</a></td>
+                <td style="background-color: #007bff;"><a href="contact.html" style="color: white;">Contact Us</a></td>
+            </tr>
+        </table>
+    </header>
+    <main>
+        <section class="about-us" style="text-align: center;border: 1px solid #007bff; background-color: whitesmoke;">
+            <h1 style="color:  #007bff;">About Us</h1>
+            <p style="margin: auto; max-width: 800px; text-align: justify;background-color: whitesmoke;">EduCare is a company built on the foundations of Education and Learning. At EduCare our goal is to help those who
+            truly need support in their linguistic journeys. We offer tutoring and mentorship support for a dozen of different 
+            languages including English, French, Spanish, Italian, German, Arabic, and many more for the convenience of our 
+            subscribers. We offer three different programs to fulfill the needs of our clients, each entailing their unique 
+            structure, and details. To further learn about these programs, click on our 'Our Products' page 
+            (underneath the logo) or by clicking the 'Shop Now' button. We truly do enjoy your interest and hope we are able 
+            to accommodate your needs. <br><br>
+            Please feel free to contact us, using the 'Contact Us' button (underneath the logo).<br><br></p>
+        </section>
+        <section class="shop-now" style="text-align: center;">
+            <!-- Shop Now Button (as a link to the Products page) -->
+            <br>
+            <form action="products.html">
+                <input type="submit" value="Shop Now!" style="background-color: #007bff; color: #fff; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; font-size: 18px;">
+            </form>
+        </section>
+            <!-- Customer Reviews/Testimonials Section -->
+        <section class="customer-reviews">
+            <p style="margin: auto; max-width: 800px; text-align: justify;"><span style="font-weight: bold;"><br><br>John Doe:</span><br>
+            <span style="color: gold;">★★★★★</span> Great Service!!!<br><br>
+            I recently moved due to work reasons and was in urgent need of some help adapting. I signed up as a last
+            resort thinking "well it cant hurt" and it was super cheap! Here I am 6 months later, having mastered Spanish
+            woohoo.. Overall, great service and definetly worth the investment!<br><br>
+            </p>
+            <p style="margin: auto; max-width: 800px; text-align: justify;"><span style="font-weight: bold;">Jane Doe:</span><br>
+                <span style="color: gold;">★★★★☆</span> Definitely worth a try<br><br>
+                I recently started getting into German, since my husband is german, and I can confidently say that EduCare was
+                SUCH a help fulfilling my dream of speaking to my partner in his native tongue. I will say it take some getting 
+                used to.. almost like going back to school again, but nevertheless thier system works and EduCare is very accomodating.
+                <br><br>
+                </p>
+        </section>
+    </main>
+    <footer style="background-color: whitesmoke; color: #007bff; text-align: center; padding: 20px; border: 1px solid #007bff; border-radius: 5px; height: max-content;">
+        <p>© 2024 Rayyan Ahmed and Muhammed Umar Khan</p>
+    </footer>
+</body>
+</html>

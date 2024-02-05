@@ -1,0 +1,80 @@
+<!--
+=========================================================
+Name        : login.html
+Assignment  : Assignment 1
+Author(s)   : Rayyan Ahmed, Muhammed Umar Khan
+Submission  : Feb 5, 2024
+Description : The code for the Login Page
+=========================================================
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCare Login</title>
+    <style>
+        body {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form {
+            margin-top: 50px;
+            padding: 20px;
+            border: 1px solid #007bff;
+            border-radius: 10px;
+            max-width: auto;
+            background-color: whitesmoke;
+            height: auto;
+            width: auto;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+        label {
+            font-size: 18px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #007bff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header>
+<img src="logo.png" alt="EduCare Logo" style="width: 300px; height: auto;padding-top: 20px;">
+</header>
+    <form method="post">
+        <fieldset style="width: 600px; padding-right: 20px;">
+            <legend style="font-size: 24px; font-weight: bold; color: #007bff; margin-bottom: 20px;">Login Information</legend>
+            <!-- Add a label and input field for 'Username' here -->
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" maxlength="22" required><br>
+
+            <!-- Add a label and input field for 'Password' here, ensure to use the correct type for password fields -->
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+
+            <input type="submit" value="Login">
+        </fieldset>
+    </form>
+    <footer style="margin-top: 20px; text-align: center; width: 400px;">
+        <form action="index.html">
+            <input type="submit" value="Back Home" style="background-color: #007bff; color: #fff; border: 1px solid #007bff; padding: 10px 20px; border-radius: 5px; cursor: pointer;"/>
+        </form>
+        <p>© 2024 Rayyan Ahmed and Muhammed Umar Khan</p>
+    </footer>
+</body>
+</html>
