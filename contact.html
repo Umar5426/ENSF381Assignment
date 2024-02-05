@@ -80,12 +80,44 @@ Description : The code for the contact page
             text-decoration: none;
             color: #007bff;
         }
+		
+        header, main, footer {
+            width: 100%;
+            max-width: auto;
+            margin: 00px 0;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            padding: 0%;
+        }
+
+        th, td {
+            border:0px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+		
     </style>
 </head>
 <body>
-<header>
-    <img src="logo.png" alt="EduCare Logo" style="width: 300px; height: auto;">
-</header>
+    <header>
+        <table style="width: 100%;">
+            <tr>
+                <td colspan="3" style="text-align: center;"><img src="logo.png" alt="EduCare Logo" style="width: 300px; height: auto;"></td>
+            </tr>
+            <tr>
+                <td style="background-color: #007bff;"><a href="login.html" style="color: white;">Login Now</a></td>
+                <td style="background-color: #007bff;"><a href="products.html" style="color:white;">Our Products</a></td>
+                <td style="background-color: #007bff;"><a href="contact.html" style="color: white;">Contact Us</a></td>
+            </tr>
+        </table>
+    </header>
+	
+	
     <div class="container">
         <div class="contact-section">
             <h2 style="color: #007bff; margin-bottom: 10px;">Customer Support</h2>
@@ -93,6 +125,8 @@ Description : The code for the contact page
             <ul>
                 <li>Phone: (587) 432-2459</li>
                 <li>Email: muhammed.khan@ucalgary.ca</li>
+				<li>Contact us on <a href="https://www.instagram.com/" target="_blank">Instagram!</a></li>
+				<li>Contact us on <a href="https://twitter.com/home" target="_blank">X!</a></li>
             </ul>
         </div>
         <div class="inquiry-section">
