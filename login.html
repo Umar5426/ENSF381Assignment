@@ -32,20 +32,26 @@ Description : The code for the Login Page
         <a href="login.html">Login Now</a>
     </div>
     
-    <form method="post">
-        <fieldset>
-            <legend>Login Information</legend>
+    <main class="main">
+        <div class="container">
+            <div class="login-section">
+                <h2>Login Information</h2>
+                <div class="login-box">
+                    <form method="post">
+                        <label for="username">Username:</label><br>
+                        <input type="text" id="username" name="username" maxlength="22" required placeholder="Enter username here"><br><br>
+    
+                        <label for="password">Password:</label><br>
+                        <input type="password" id="password" name="password" required placeholder="Enter password here"><br><br>
+    
+                        <input type="submit" value="Login">
+                    </form>
+                    <p>No account? <a href="#">Sign up here</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
 
-            <label for="username">Username:</label><br>
-            <input type="text" id="username" name="username" maxlength="22" required><br>
-
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" required><br>
-
-            <input type="submit" value="Login">
-            <span class="create-account">Click here to create an account!</span>
-        </fieldset>
-    </form>
     <footer>
         <form action="index.html">
             <input type="submit" value="Back Home">
