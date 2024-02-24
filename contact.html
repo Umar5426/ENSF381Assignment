@@ -13,143 +13,50 @@ Description : The code for the contact page
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduCare Contacts</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            text-align: center;
-            padding-top: 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: whitesmoke;
-            border: 1px solid #007bff;
-            border-radius: 5px;
-        }
-
-        .contact-section, .inquiry-section {
-            margin-bottom: 30px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 750px;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        input[type="submit"],
-        input[type="reset"] {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        input[type="submit"]:hover,
-        input[type="reset"]:hover {
-            background-color: #0056b3;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            background-color: whitesmoke;
-        }
-
-        footer a {
-            text-decoration: none;
-            color: #007bff;
-        }
-		
-        header, main, footer {
-            width: 100%;
-            max-width: auto;
-            margin: 00px 0;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            padding: 0%;
-        }
-
-        th, td {
-            border:0px solid black;
-            padding: 10px;
-            text-align: center;
-        }
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="EduCare Logo" style="width: 300px; height: auto;" class="center">
-        <table style="width: 100%;">
-            <tr>
-                <td style="background-color: #007bff;"><a href="index.html" style="color: white;">Home Page</a></td>
-                <td style="background-color: #007bff;"><a href="products.html" style="color:white;">Our Products</a></td>
-                <td style="background-color: #007bff;"><a href="contact.html" style="color: white;">Contact Us</a></td>
-                <td style="background-color: #007bff;"><a href="login.html" style="color: white;">Login Now</a></td>
-            </tr>
-        </table>
+        <img src="logo.png" alt="EduCare Logo" class="center">
+        <div class="nav">
+            <a href="index.html">Home Page</a>
+            <a href="products.html">Our Products</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html">Login Now</a>
+        </div>
     </header>
-	
-	
-    <div class="container">
-        <div class="contact-section">
-            <h2 style="color: #007bff; margin-bottom: 10px;">Customer Support</h2>
-            <p>Please feel free to contact us:</p>
-            <ul>
-                <li>Phone: (587) 432-2459</li>
-                <li>Email: muhammed.khan@ucalgary.ca</li>
-				<li>Contact us on <a href="https://www.instagram.com/" target="_blank">Instagram!</a></li>
-				<li>Contact us on <a href="https://twitter.com/home" target="_blank">X!</a></li>
-            </ul>
+    
+    <main class="main">
+        <div class="container">
+            <div class="contact-section">
+                <h2>Customer Support</h2>
+                <p>Please feel free to contact us:</p>
+                <ul>
+                    <li>Phone: (587) 432-2459</li>
+                    <li>Email: muhammed.khan@ucalgary.ca</li>
+                    <li>Contact us on <a href="https://www.instagram.com/" target="_blank">Instagram!</a></li>
+                    <li>Contact us on <a href="https://twitter.com/home" target="_blank">X!</a></li>
+                </ul>
+            </div>
+            <div class="inquiry-section">
+                <h2>Share Your Inquiries</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="feedback">Feedback:</label><br>
+                    <textarea id="feedback" name="feedback" rows="6" cols="50" required></textarea><br><br>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </form>
+            </div>
         </div>
-        <div class="inquiry-section">
-            <h2 style="color: #007bff; margin-bottom: 10px;">Share Your Inquiries</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="feedback">Feedback:</label><br>
-                <textarea id="feedback" name="feedback" rows="6" cols="50" required></textarea><br><br>
-                <input type="submit" value="Submit">
-                <input type="reset" value="Reset">
-            </form>
-        </div>
-    </div>
-    <footer style="background-color: whitesmoke; color: #007bff; text-align: center; padding: 20px; border: 1px solid #007bff; border-radius: 5px;">
+    </main>
+
+    <footer>
         <form action="index.html">
-            <input type="submit" value="Back Home" style="background-color: #007bff; border: none; color: white; padding: 10px 20px; text-transform: uppercase; font-weight: bold; cursor: pointer; border-radius: 5px;">
+            <input type="submit" value="Back Home">
         </form>
         <p>© 2024 Rayyan Ahmed and Muhammed Umar Khan</p>
     </footer>

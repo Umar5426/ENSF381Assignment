@@ -8,132 +8,95 @@ Description : The code for the products page
 =========================================================
 -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>EduCare Products</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        header, main, footer {
-            width: 100%;
-            max-width: auto;
-            margin: 00px 0;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            padding: 0%;
-        }
-
-        th, td {
-            border:0px solid black;
-            padding: 10px;
-            text-align: center;
-        }
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-}
-    </style>
+    <meta charset="UTF-8">
+    <meta name="description" content="EduCare Tab heading">
+    <meta name="keywords" content="HTML, Web Development, Example, img">
+    <meta name="author" content="Rayyan Ahmed, Muhammed Umar Khan">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>EduCare</title>
+    <!-- Linking the CSS file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="EduCare Logo" style="width: 300px; height: auto;" class="center">
-        <table style="width: 100%;">
-            <tr>
-                <td style="background-color: #007bff;"><a href="index.html" style="color: white;">Home Page</a></td>
-                <td style="background-color: #007bff;"><a href="products.html" style="color:white;">Our Products</a></td>
-                <td style="background-color: #007bff;"><a href="contact.html" style="color: white;">Contact Us</a></td>
-                <td style="background-color: #007bff;"><a href="login.html" style="color: white;">Login Now</a></td>
-            </tr>
-        </table>
-
-		<table style="width: 100%;">
-			<tr>
-				<th colspan="3" style="background-color: #007bff; color: white; padding: 10px;">EduCare - Our Membership Options</th>
-			</tr>
-		</table>
-	</header>
-
-<div style="display: flex; justify-content: space-around; padding: 20px;">
-    <div style="background-color: silver; border-radius: 5px;box-shadow: 0 0 10px lightgray; text-align: center;padding: 20px; margin: 10px;">
-        <h2 style="color: whitesmoke;">Silver Membership</h2>
-        <ul style="list-style-type: none; color: white; padding: 0; margin: 0;">
-            <li>Choice of Language</li>
-            <li>Weekly Classes</li>
-            <li>Progress Tracking</li>
-            <li>Interactive Learning Opportunities</li>
-        </ul>
-        <form style="margin-top: 15px;">
-            <input type="submit" value='$14.99+taxes/Month' style="background-color: whitesmoke; border: none; color: darkgray; padding: 10px 20px; text-transform: uppercase; font-weight: bold; cursor: pointer; border-radius: 5px;">
-        </form>    </div>
-		
-    <div style="background-color: goldenrod; border-radius: 5px; box-shadow: 0 0 10px lightgoldenrodyellow; padding: 20px; margin: 10px; text-align: center;">
-        <h2 style="color: lightgoldenrodyellow;">Gold Membership</h2>
-        <ul style="list-style-type: none; padding: 0;color: white;">
-            <li>Unlimited Language Choices</li>
-            <li>Bi-Weekly Classes</li>
-            <li>Progress Tracking</li>
-            <li>Interactive Learning Opportunities</li>
-        </ul>
-        <form>
-            <input type="submit" value='On Sale Now! $19.99+taxes/Month' style="background-color: yellow; border: none; color: darkgoldenrod; padding: 10px 20px; text-transform: uppercase; font-weight: bold; cursor: pointer; border-radius: 5px;">
-        </form>    </div>
-		
-    <div style="background-color:#A0B2C6 ; border-radius: 5px; box-shadow: 0 0 10px lightblue; padding: 20px; margin: 10px; text-align: center;">
-        <h2 style="color: #007bff;">Platinum Membership</h2>
-        <ul style="list-style-type: none; padding: 0; color: white">
-            <li>Unlimited Language Choices</li>
-            <li>Daily Classes</li>
-            <li>Progress Tracking</li>
-            <li>Interactive Learning Opportunities</li>
-            <li>Personally Assigned Tutor</li>
-            <li>24/7 Support</li>
-        </ul>
-        <form>
-            <input type="submit" value='On Sale Now! $24.99+taxes/Month' style="background-color: #007bff; border: none; color: white; padding: 10px 20px; text-transform: uppercase; font-weight: bold; cursor: pointer; border-radius: 5px;">
-        </form>
+        <img src="logo.png" alt="EduCare Logo" class="center">
+        <h1>EduCare</h1>
+    </header>
+    
+    <div class="nav">
+        <a href="index.html">Home Page</a>
+        <a href="products.html">Our Products</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html">Login Now</a>
     </div>
-	
-    <div style="background-color:#FF0000 ; border-radius: 5px; box-shadow: 0 0 10px lightblue; padding: 20px; margin: 10px; text-align: center;">
-        <h2 style="color: #FFFFFF;">Yearly Membership</h2>
-        <ul style="list-style-type: none; padding: 0; color: white">
-            <li>Unlimited Language Choices</li>
-            <li>Daily Classes</li>
-            <li>Progress Tracking</li>
-            <li>Interactive Learning Opportunities</li>
-            <li>Personally Assigned Tutor</li>
-            <li>24/7 Support</li>
-			<li>Save Money Yearly</li>
-        </ul>
-        <form>
-            <input type="submit" value='On Sale Now! $224.99+taxes for a year' style="background-color: #007bff; border: none; color: white; padding: 10px 20px; text-transform: uppercase; font-weight: bold; cursor: pointer; border-radius: 5px;">
-        </form>
+    
+    <main>
+        <div class="flex-container">
+        <div class="product-item">
+            <h2 style="color: whitesmoke;">Silver Membership</h2>
+            <ul style="list-style-type: none; color: white; padding: 0; margin: 0;">
+                <li>Choice of Language</li>
+                <li>Weekly Classes</li>
+                <li>Progress Tracking</li>
+                <li>Interactive Learning Opportunities</li>
+            </ul>
+            <form style="margin-top: 15px;">
+                <input type="submit" value='$14.99+taxes/Month' style="background-color: whitesmoke; border: none; color: darkgray; padding: 10px 20px; text-transform: uppercase; font-weight: bold; cursor: pointer; border-radius: 5px;">
+            </form>    </div>
+            
+            <div class="product-item">
+            <h2 style="color: lightgoldenrodyellow;">Gold Membership</h2>
+            <ul style="list-style-type: none; padding: 0;color: white;">
+                <li>Unlimited Language Choices</li>
+                <li>Bi-Weekly Classes</li>
+                <li>Progress Tracking</li>
+                <li>Interactive Learning Opportunities</li>
+            </ul>
+            <form>
+                <input type="submit" value='On Sale Now! $19.99+taxes/Month' style="background-color: yellow; border: none; color: darkgoldenrod; padding: 10px 20px; text-transform: uppercase; font-weight: bold; cursor: pointer; border-radius: 5px;">
+            </form>    </div>
+            
+            <div class="product-item">            
+            <h2 style="color: #007bff;">Platinum Membership</h2>
+            <ul style="list-style-type: none; padding: 0; color: white">
+                <li>Unlimited Language Choices</li>
+                <li>Daily Classes</li>
+                <li>Progress Tracking</li>
+                <li>Interactive Learning Opportunities</li>
+                <li>Personally Assigned Tutor</li>
+                <li>24/7 Support</li>
+            </ul>
+            <form>
+                <input type="submit" value='On Sale Now! $24.99+taxes/Month' style="background-color: #007bff; border: none; color: white; padding: 10px 20px; text-transform: uppercase; font-weight: bold; cursor: pointer; border-radius: 5px;">
+            </form>
+        </div>
+        
+        <div class="product-item">
+            <h2 style="color: #FFFFFF;">Yearly Membership</h2>
+            <ul style="list-style-type: none; padding: 0; color: white">
+                <li>Unlimited Language Choices</li>
+                <li>Daily Classes</li>
+                <li>Progress Tracking</li>
+                <li>Interactive Learning Opportunities</li>
+                <li>Personally Assigned Tutor</li>
+                <li>24/7 Support</li>
+                <li>Save Money Yearly</li>
+            </ul>
+            <form>
+                <input type="submit" value='On Sale Now! $224.99+taxes for a year' style="background-color: #007bff; border: none; color: white; padding: 10px 20px; text-transform: uppercase; font-weight: bold; cursor: pointer; border-radius: 5px;">
+            </form>
+        </div>
+        
     </div>
-	
-</div>
+    </main>
 
-<footer style="margin-top: 20px; text-align: center; width: 400px;">
-   <br>
-    <form action="index.html" style=" border: 1px solid #007bff; background-color: whitesmoke; border-radius: 5px; padding: 20px;">
-        <input type="submit" value="Back Home" style="background-color: #007bff; color: #fff; border: 1px solid #007bff; padding: 10px 20px; border-radius: 5px; cursor: pointer;"/>
-    </form>
-    <p>© 2024 Rayyan Ahmed and Muhammed Umar Khan</p>
-</footer>
-</footer>
+    <footer>
+        <form action="index.html">
+            <input type="submit" value="Back Home">
+        </form>
+        <p>© 2024 Rayyan Ahmed and Muhammed Umar Khan</p>
+    </footer>
 </body>
 </html>

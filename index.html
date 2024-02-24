@@ -16,83 +16,58 @@ Description : The code for the "Main" (Index) Page
     <meta name="author" content="Rayyan Ahmed, Muhammed Umar Khan">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>EduCare</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        header, main, footer {
-            width: 100%;
-            max-width: auto;
-            margin: 00px 0;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            padding: 0%;
-        }
-
-        th, td {
-            border:0px solid black;
-            padding: 10px;
-            text-align: center;
-        }
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
-    </style>
+    <!-- Linking the CSS file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="EduCare Logo" style="width: 300px; height: auto;" class="center">
-        <table style="width: 100%;">
-            <tr>
-                <td style="background-color: #007bff;"><a href="index.html" style="color: white;">Home Page</a></td>
-                <td style="background-color: #007bff;"><a href="products.html" style="color:white;">Our Products</a></td>
-                <td style="background-color: #007bff;"><a href="contact.html" style="color: white;">Contact Us</a></td>
-                <td style="background-color: #007bff;"><a href="login.html" style="color: white;">Login Now</a></td>
-            </tr>
-        </table>
+        <img src="logo.png" alt="EduCare Logo" class="center">
+        <h1>EduCare</h1>
     </header>
+    
+    <div class="nav">
+        <a href="index.html">Home Page</a>
+        <a href="products.html">Our Products</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html">Login Now</a>
+    </div>
+    
+    
     <main>
-        <section class="about-us" style="text-align: center;border: 1px solid #007bff; background-color: whitesmoke;">
-            <h1 style="color:  #007bff;">About Us</h1>
-            <p style="margin: auto; max-width: 800px; text-align: justify;background-color: whitesmoke;">EduCare is a company built on the foundations of Education and Learning. At EduCare our goal is to help those who
-            truly need support in their linguistic journeys. We offer tutoring and mentorship support for a dozen of different 
-            languages including English, French, Spanish, Italian, German, Arabic, and many more for the convenience of our 
-            subscribers. We offer three different programs to fulfill the needs of our clients, each entailing their unique 
-            structure, and details. To further learn about these programs, click on our 'Our Products' page 
-            (underneath the logo) or by clicking the 'Shop Now' button. We truly do enjoy your interest and hope we are able 
-            to accommodate your needs. <br><br>
-            Please feel free to contact us, using the 'Contact Us' button (underneath the logo).<br><br></p>
+        <section class="about-us">
+            <h1 class="title">About Us</h1>
+            <div class="about-content">
+        
+                <p>EduCare is a company built on the foundations of Education and Learning. At EduCare our goal is to help those who
+                truly need support in their linguistic journeys. We offer tutoring and mentorship support for a dozen of different 
+                languages including English, French, Spanish, Italian, German, Arabic, and many more for the convenience of our 
+                subscribers. We offer three different programs to fulfill the needs of our clients, each entailing their unique 
+                structure, and details. To further learn about these programs, click on our 'Our Products' page 
+                (underneath the logo) or by clicking the 'Shop Now' button. We truly do enjoy your interest and hope we are able 
+                to accommodate your needs. <br><br>
+                Please feel free to contact us, using the 'Contact Us' button (underneath the logo).<br><br></p>
+            </div>
         </section>
-        <section class="shop-now" style="text-align: center;">
-            <!-- Shop Now Button (as a link to the Products page) -->
+        
+        
+        <section class="shop-now">
             <br>
             <form action="products.html">
-                <input type="submit" value="Shop Now!" style="background-color: #007bff; color: #fff; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; font-size: 18px;">
+                <input type="submit" value="Shop Now!">
             </form>
         </section>
-            <!-- Customer Reviews/Testimonials Section -->
+
+
         <section class="customer-reviews">
-            <p style="margin: auto; max-width: 800px; text-align: justify;"><span style="font-weight: bold;"><br><br>John Doe:</span><br>
-            <span style="color: gold;">★★★★★</span> Great Service!!!<br><br>
+            <h1>Customer Reviews</h1>
+            <p><span>John Doe:</span><br>
+            <span>★★★★★</span> Great Service!!!<br><br>
             I recently moved due to work reasons and was in urgent need of some help adapting. I signed up as a last
             resort thinking "well it cant hurt" and it was super cheap! Here I am 6 months later, having mastered Spanish
             woohoo.. Overall, great service and definetly worth the investment!<br><br>
             </p>
-            <p style="margin: auto; max-width: 800px; text-align: justify;"><span style="font-weight: bold;">Jane Doe:</span><br>
-                <span style="color: gold;">★★★★☆</span> Definitely worth a try<br><br>
+            <p><span>Jane Doe:</span><br>
+                <span>★★★★☆</span> Definitely worth a try<br><br>
                 I recently started getting into German, since my husband is german, and I can confidently say that EduCare was
                 SUCH a help fulfilling my dream of speaking to my partner in his native tongue. I will say it take some getting 
                 used to.. almost like going back to school again, but nevertheless thier system works and EduCare is very accomodating.
@@ -100,7 +75,7 @@ Description : The code for the "Main" (Index) Page
                 </p>
         </section>
     </main>
-    <footer style="background-color: whitesmoke; color: #007bff; text-align: center; padding: 20px; border: 1px solid #007bff; border-radius: 5px; height: max-content;">
+    <footer>
         <p>© 2024 Rayyan Ahmed and Muhammed Umar Khan</p>
     </footer>
 </body>

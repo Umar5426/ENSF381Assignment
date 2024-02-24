@@ -8,115 +8,47 @@ Description : The code for the Login Page
 =========================================================
 -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduCare Login</title>
-    <style>
-        body {
-            display:flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        form {
-            margin-top: 50px;
-            padding: 20px;
-            border: 1px solid #007bff;
-            border-radius: 10px;
-            max-width: auto;
-            background-color: whitesmoke;
-            height: auto;
-            width: auto;
-        }
-
-        fieldset {
-            border: none;
-            padding: 0;
-            margin: 0;
-        }
-        label {
-            font-size: 18px;
-            color: #333;
-        }
-
-        input[type="text"],
-        input[type="password"] {
-            width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #007bff;
-            cursor: pointer;
-        }
-		
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-		
-        header, main, footer {
-            width: 100%;
-            max-width: auto;
-            margin: 00px 0;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-		
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            padding: 0%;
-        }
-
-        th, td {
-            border:0px solid black;
-            padding: 10px;
-            text-align: center;
-        }
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
-    </style>
+    <meta name="description" content="EduCare Tab heading">
+    <meta name="keywords" content="HTML, Web Development, Example, img">
+    <meta name="author" content="Rayyan Ahmed, Muhammed Umar Khan">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>EduCare</title>
+    <!-- Linking the CSS file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="EduCare Logo" style="width: 300px; height: auto;" class="center">
-        <table style="width: 100%;">
-            <tr>
-                <td style="background-color: #007bff;"><a href="index.html" style="color: white;">Home Page</a></td>
-                <td style="background-color: #007bff;"><a href="products.html" style="color:white;">Our Products</a></td>
-                <td style="background-color: #007bff;"><a href="contact.html" style="color: white;">Contact Us</a></td>
-                <td style="background-color: #007bff;"><a href="login.html" style="color: white;">Login Now</a></td>
-            </tr>
-        </table>
+        <img src="logo.png" alt="EduCare Logo" class="center">
+        <h1>EduCare</h1>
     </header>
+    
+    <div class="nav">
+        <a href="index.html">Home Page</a>
+        <a href="products.html">Our Products</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html">Login Now</a>
+    </div>
+    
     <form method="post">
-        <fieldset style="width: 600px; padding-right: 20px;">
-            <legend style="font-size: 24px; font-weight: bold; color: #007bff; margin-bottom: 20px;">Login Information</legend>
+        <fieldset>
+            <legend>Login Information</legend>
 
             <label for="username">Username:</label><br>
             <input type="text" id="username" name="username" maxlength="22" required><br>
-
 
             <label for="password">Password:</label><br>
             <input type="password" id="password" name="password" required><br>
 
             <input type="submit" value="Login">
-			<span style="margin-left: 10px; font-size: 14px; color: white;cursor: pointer; background-color: #007bff; border-radius: 5px; padding: 5px;">Click here to create an account!</span>
-    </fieldset>
+            <span class="create-account">Click here to create an account!</span>
         </fieldset>
     </form>
-    <footer style="margin-top: 20px; text-align: center; width: 400px;">
+    <footer>
         <form action="index.html">
-            <input type="submit" value="Back Home" style="background-color: #007bff; color: #fff; border: 1px solid #007bff; padding: 10px 20px; border-radius: 5px; cursor: pointer;"/>
+            <input type="submit" value="Back Home">
         </form>
         <p>© 2024 Rayyan Ahmed and Muhammed Umar Khan</p>
     </footer>
